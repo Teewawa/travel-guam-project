@@ -3,9 +3,20 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../media/travel-guam-sunset-2.jpg);
@@ -55,7 +66,46 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(1, 21, 44, 0.8), rgba(1, 21, 44, 0.9)),
+    url(../media/guam-footer.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -76,5 +126,20 @@ header a {
     font-size: 12px;
     padding: 12px 24px;
     margin-top: 28px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  footer h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
