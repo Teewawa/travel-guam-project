@@ -11,12 +11,20 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 60px;
 }
 
 .grid {
   display: grid;
+  column-gap: 20px;
+}
+
+.grid-2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3col {
   grid-template-columns: 1fr 2fr 2fr;
-  column-gap: 36px;
 }
 
 header {
@@ -42,6 +50,7 @@ header h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 1;
+  letter-spacing: 9px;
   margin: 0;
 }
 
@@ -68,6 +77,43 @@ header a {
   margin-top: 32px;
 }
 
+main {
+  background-color: white;
+}
+
+.main-img {
+  width: 550px;
+  max-width: 100%;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 0;
+  color: #202f44;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.5;
+  color: #202f44;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #202f44;
+  opacity: 0.7;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(1, 21, 44, 0.8), rgba(1, 21, 44, 0.9)),
@@ -75,7 +121,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 20px;
 }
 
 footer h4 {
@@ -127,6 +172,28 @@ footer a {
     font-size: 12px;
     padding: 12px 24px;
     margin-top: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid-3col {
+    grid-gap: 0px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  footer {
+    padding: 0px 50px;
+  }
+
+  .main-img {
+    display: block;
+    margin: 0 auto;
   }
 
   footer h4 {
