@@ -356,10 +356,6 @@ footer a {
 }
 
 @media (max-width: 310px) {
-  main h3 {
-    font-size: ;
-  }
-
   .instagram-embeds iframe {
     min-width: 250px !important;
   }
